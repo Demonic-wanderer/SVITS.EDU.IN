@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semester 1 Result - Tejas Lohana</title>
+<style>
+    :root {
+      --border: #d9dde4;
+      --text: #2d3138;
+      --muted: #5f6673;
+      --page: #f3f4f7;
+      --sheet: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--page);
+      color: var(--text);
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      padding: 24px 12px 40px;
+    }
+
+    .wrap {
+      width: min(100%, 980px);
+      margin: 0 auto;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 14px;
+      color: #325c96;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .sheet {
+      background: var(--sheet);
+      border: 1px solid var(--border);
+      box-shadow: 0 10px 30px rgba(79, 89, 110, 0.08);
+      overflow: hidden;
+    }
+
+    .sheet-header {
+      display: grid;
+      grid-template-columns: 118px 1fr;
+      gap: 18px;
+      align-items: center;
+      padding: 18px 20px 12px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .logo-box {
+      width: 96px;
+      height: 96px;
+      display: grid;
+      place-items: center;
+    }
+
+    .logo-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+    }
+
+    .university-name {
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      line-height: 1.15;
+      font-weight: 500;
+      color: #1f2329;
+    }
+
+    .statement-title {
+      text-align: center;
+      padding: 8px 10px;
+      border-bottom: 1px solid var(--border);
+      font-weight: 700;
+      font-size: 1rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .meta td,
+    .marks td,
+    .marks th,
+    .summary td {
+      border: 1px solid var(--border);
+      padding: 7px 8px;
+      font-size: 0.92rem;
+      vertical-align: top;
+    }
+
+    .meta td.label,
+    .summary td.label {
+      width: 15%;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+
+    .meta td.value,
+    .summary td.value {
+      width: 35%;
+      font-weight: 500;
+    }
+
+    .section-space {
+      height: 14px;
+      background: #fff;
+    }
+
+    .marks th {
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .marks td:nth-child(1),
+    .marks td:nth-child(3),
+    .marks td:nth-child(4),
+    .marks td:nth-child(5),
+    .marks td:nth-child(6),
+    .marks td:nth-child(7) {
+      text-align: center;
+      white-space: nowrap;
+    }
+
+    .marks td:nth-child(2) {
+      min-width: 240px;
+    }
+
+    .total-row td {
+      font-weight: 700;
+    }
+
+    @media (max-width: 720px) {
+      body {
+        padding: 12px 6px 24px;
+      }
+
+      .wrap {
+        width: 100%;
+      }
+
+      .back-link {
+        margin-bottom: 10px;
+        font-size: 0.92rem;
+      }
+
+      .sheet-header {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+        padding: 14px 12px 10px;
+        gap: 10px;
+      }
+
+      .university-name {
+        font-size: 2rem;
+      }
+
+      .statement-title {
+        font-size: 0.9rem;
+        line-height: 1.35;
+        padding: 8px 12px;
+      }
+
+      .meta td,
+      .marks td,
+      .marks th,
+      .summary td {
+        font-size: 0.82rem;
+        padding: 6px;
+      }
+
+      .sheet {
+        overflow-x: auto;
+        border-radius: 12px;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .sheet table {
+        min-width: 720px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 8px 4px 18px;
+      }
+
+      .logo-box {
+        width: 72px;
+        height: 72px;
+      }
+
+      .university-name {
+        font-size: 1.55rem;
+      }
+
+      .statement-title {
+        font-size: 0.82rem;
+      }
+
+      .meta td,
+      .marks td,
+      .marks th,
+      .summary td {
+        font-size: 0.76rem;
+        padding: 5px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <a class="back-link" href="./index.html">&larr; Back to dashboard</a>
+
+    <main class="sheet">
+      <header class="sheet-header">
+        <div class="logo-box" aria-hidden="true">
+          <img src="./assets/university-logo.jpg" alt="University logo">
+        </div>
+        <div class="university-name">Shri Vaishnav Vidyapeeth<br>Vishwavidyalaya</div>
+      </header>
+
+      <div class="statement-title">STATEMENT OF MARKS DECEMBER-2025</div>
+
+      <table class="meta">
+        <tr>
+          <td class="label">NAME</td>
+          <td class="value">TEJAS LOHANA</td>
+          <td class="label">ENROLLMENT NO.</td>
+          <td class="value">2510BTESRH0028</td>
+        </tr>
+        <tr>
+          <td class="label">Father's Name</td>
+          <td class="value">MADHAV PRASAD LOHANA</td>
+          <td class="label">Mother's Name</td>
+          <td class="value">SHEETAL LOHANA</td>
+        </tr>
+        <tr>
+          <td class="label">Institute</td>
+          <td class="value">Shri Vaishnav Institute of Information Technology (SVIIT)</td>
+          <td class="label"></td>
+          <td class="value"></td>
+        </tr>
+        <tr>
+          <td class="label">SEMESTER</td>
+          <td class="value">1</td>
+          <td class="label">STATUS</td>
+          <td class="value">REGULAR</td>
+        </tr>
+      </table>
+
+      <div class="section-space"></div>
+
+      <table class="marks">
+        <thead>
+          <tr>
+            <th>Course Code</th>
+            <th>Course Name</th>
+            <th>Total Credit</th>
+            <th>Earned Credit</th>
+            <th>Grade Internal</th>
+            <th>Grade End Sem</th>
+            <th>Total Grade</th>
+          </tr>
+        </thead>
+        <tbody>
+<tr>
+  <td>BTCS101M</td>
+  <td>INTRODUCTION TO COMPUTER SCIENCE AND ENGINEERING</td>
+  <td>3</td>
+  <td>3</td>
+  <td>B</td>
+  <td>B+</td>
+  <td>B+</td>
+</tr>
+<tr>
+  <td>BTCS103M</td>
+  <td>COMPUTER SYSTEM ORGANIZATION</td>
+  <td>3</td>
+  <td>3</td>
+  <td>B</td>
+  <td>B+</td>
+  <td>B+</td>
+</tr>
+<tr>
+  <td>BTCS103M(P)</td>
+  <td>COMPUTER SYSTEM ORGANIZATION LAB</td>
+  <td>1</td>
+  <td>1</td>
+  <td>A</td>
+  <td>A</td>
+  <td>A</td>
+</tr>
+<tr>
+  <td>BTCS107M</td>
+  <td>PROGRAM DEVELOPMENT USING C</td>
+  <td>1</td>
+  <td>1</td>
+  <td>A</td>
+  <td>A</td>
+  <td>A</td>
+</tr>
+<tr>
+  <td>BTCSH102</td>
+  <td>STATISTICS, PROBABILITY AND CALCULUS</td>
+  <td>3</td>
+  <td>3</td>
+  <td>B</td>
+  <td>B</td>
+  <td>B</td>
+</tr>
+<tr>
+  <td>BTPH101</td>
+  <td>APPLIED PHYSICS</td>
+  <td>4</td>
+  <td>0</td>
+  <td>C</td>
+  <td>F</td>
+  <td>F</td>
+</tr>
+<tr>
+  <td>BTPH101(P)</td>
+  <td>APPLIED PHYSICS LAB</td>
+  <td>1</td>
+  <td>1</td>
+  <td>A</td>
+  <td>A</td>
+  <td>A</td>
+</tr>
+<tr>
+  <td>HUCS101</td>
+  <td>COMMUNICATION SKILLS</td>
+  <td>1</td>
+  <td>1</td>
+  <td>B+</td>
+  <td>B+</td>
+  <td>B+</td>
+</tr>
+<tr>
+  <td>HUCS101(P)</td>
+  <td>COMMUNICATION SKILLS LAB</td>
+  <td>1</td>
+  <td>1</td>
+  <td>A</td>
+  <td>A</td>
+  <td>A</td>
+</tr>
+<tr>
+  <td>RND101</td>
+  <td>R&D AND ADMINISTRATION</td>
+  <td>1</td>
+  <td>1</td>
+  <td>B+</td>
+  <td>B+</td>
+  <td>B+</td>
+</tr>
+          <tr class="total-row">
+            <td colspan="2">TOTAL</td>
+            <td>19</td>
+            <td>15</td>
+            <td></td>
+            <td></td>
+            <td>F</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="section-space"></div>
+
+      <table class="summary">
+        <tr>
+          <td class="label">RESULT :</td>
+          <td class="value">FAIL</td>
+          <td class="label">SGPA :</td>
+          <td class="value">6.20</td>
+          <td class="label">CGPA (As on Date) :</td>
+          <td class="value">6.20</td>
+        </tr>
+      </table>
+    </main>
+  </div>
+</body>
+</html>
